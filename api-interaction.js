@@ -1,24 +1,13 @@
-/*Load the DOM
-document.addEventListener("DOMContentLoaded", theDomHasLoaded);
-function theDomHasLoaded(event) {
-*/
-
-//When "Generate Quote" button is clicked
+// 1) When "Generate Quote" button is clicked
 
 var btn = document.getElementById("quoteButton");
 
-btn.addEventListener("click", showQuoteBox);
-
-function showQuoteBox () {
-  document.getElementById("quoteBox").style.display = "block";
-}
-
-//} <-- belongs to theDomHasLoaded
+btn.addEventListener("click", generateQuote);
 
 //XMLHttpRequest
 function generateQuote() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://eda-te-reo.herokuapp.com/api/proverbs");
+    xhr.open("GET", "https://eda-te-reo.herokuapp.com/api/proverbs");
   xhr.send();
 
 //Response
@@ -26,6 +15,10 @@ function generateQuote() {
 
 
 //Print out Quote
-
+  document.getElementById("quoteBox").style.display = "";
 
 }
+
+
+
+// 2) Tweet Generated Quote

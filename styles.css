@@ -1,8 +1,16 @@
-#title {
-  color: blue
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
 }
 
-.quoteBox {
-  border: 1px
-  background-color: yellow
+#title {
+  color: blue;
+}
+
+#quoteBox {
+  border: 1px;
+  padding: 2px;
+  margin: 5px;
+  background-color: yellow;
 }
