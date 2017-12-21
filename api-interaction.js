@@ -1,20 +1,19 @@
-//Load the DOM
-
-//document.addEventListener("DOMContentLoaded", theDomHasLoaded);
-
-//function theDomHasLoaded(event) {
+/*Load the DOM
+document.addEventListener("DOMContentLoaded", theDomHasLoaded);
+function theDomHasLoaded(event) {
+*/
 
 //When "Generate Quote" button is clicked
 
 var btn = document.getElementById("quoteButton");
 
-btn.addEventListener("click", alertPop);
+btn.addEventListener("click", showQuoteBox);
 
-function alertPop () {
-  alert("This is a pop-up");
+function showQuoteBox () {
+  document.getElementById("quoteBox").style.display = "block";
 }
 
-//}
+//} <-- belongs to theDomHasLoaded
 
 //XMLHttpRequest
 function generateQuote() {

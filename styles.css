@@ -1,3 +1,8 @@
 #title {
   color: blue
 }
+
+.quoteBox {
+  border: 1px
+  background-color: yellow
+}

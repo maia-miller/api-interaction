@@ -13,9 +13,6 @@
 <!-- ========== CSS ========== -->
 <link rel="stylesheet" type="text/css" href="styles.css">
 
-<!-- ========== Scripts ==========
-<script type="text/javascript" src="api-interaction.js"></script> -->
-
   </head>
 
   <body>
@@ -32,7 +29,10 @@
       <button type="button" id="quoteButton">Generate Quote</button>
     </div>
 
-    <div class="quoteBox">
+    <div id="quoteBox" style="display:none">
+      <p>
+        Your Quote is:
+      </p>
     </div>
 
     <div class="tweet">
@@ -41,7 +41,8 @@
 
   </div>
 
-<script type="text/javascript" src="api-interaction.js"></script>
+  <!-- ========== Scripts ========== -->
+  <script type="text/javascript" src="api-interaction.js"></script>
 
     </body>
   </html>
